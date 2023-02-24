@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Poppins:wght@200&display=swap');
+
+
+ body {
+     font-family: 'Oxygen', sans-serif;
+ }
+
+
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    border: rgb(82, 70, 70) 10px double;
+    height: 200px;
+    font-weight: 600;
+    background-color: black;
+    grid-area: header;
+    position: sticky;
+   top: 0;
+   z-index: 2;
+}
+
+.botonWhatsApp img {
+    width: 70px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.fondo{
+background: url(../img/lima.jpg);
+background-size: cover;
+
+
+}
