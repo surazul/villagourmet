@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Poppins:wght@200&display=swap');
 
 
- body {
-     font-family: 'Oxygen', sans-serif;
- }
+body {
+    font-family: 'Oxygen', sans-serif;
+    
+}
 
 
- header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,10 +18,12 @@
     background-color: black;
     grid-area: header;
     position: sticky;
-   top: 0;
-   z-index: 2;
+    top: 0;
+    z-index: 2;
 }
 
+
+/*link whatsapp*/
 .botonWhatsApp img {
     width: 70px;
     position: fixed;
@@ -28,9 +31,28 @@
     right: 50px;
 }
 
-.fondo{
-background: url(../img/lima.jpg);
-background-size: cover;
 
+/*imagen de fondo inicio*/
 
+.fondo {
+    height: 100vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+    background-color: black;
+}
+
+.fondo ::before {
+    background: url(../img/lima.jpg);
+    background-size: cover;
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+}
+
+.fondo p {
+    color: white;
+    isolation: isolate;
+    line-height: 2;
 }
