@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villagourmet</title>
+    <!--hoja de CSS Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--hoja de CSS -->
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!--iconoweb-->
+    <link rel="shortcut icon" href="../img/lima_3.png">
+
+</head>
+
+<body class="bg-black">
+
+    <!--Esto es el header -->
+    <header>
+        <!-- Div Fila completo de pantalla: Contiene imagen + navbar-->
+        <div class="container-lg align-items-center p-5">
+            <nav class="navbar static-top navbar-expand-lg" data-bs-theme="dark">
+                <!-- Le doy un volumen de 2/12 a la imagen -->
+                <div class="col-2 ms-1">
+                    <img class="img-fluid" src="../img/lima_2.jpeg" alt="logo" width="200" height="200">
+                </div>
+                <!-- Le doy un volumen de 10/12 al navbar -->
+                <div class="col-10 ms-5">
+
+                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="productos.html">Productos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ubicacion.html">Ubicación</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="container-lg mt-4 text-white">
+        <div class="row-6 text-center">
+        <h1>Productos</h1>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/mixfrutos.jpg" class="d-block w-100" alt="mixfrutos">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Mix de Frutos</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../img/lima.jpg" class="d-block w-100" alt="lima">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Lima</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../img/almendra.jpg" class="d-block w-100" alt="almendras">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Almendras</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../img/azafran.jpg" class="d-block w-100" alt="azafran">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Azafran</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../img/curcuma.jpg" class="d-block w-100" alt="Curcuma">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Curcuma</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../img/hongos.jpg" class="d-block w-100" alt="Hongos">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Hongos</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        
+    </div>
+    </div>
+   
+
+
+
+
+
+
+
+    <!--Esto es el fotter -->
+    <footer class="container-lg mt-5 p-4 text-white text-center border-top ">
+        <h3>Seguinos en las Redes Sociales</h2>
+            <ul>
+                <li class="p-3 align-items-center">
+                    <a target="_blank" href="https://www.facebook.com/"><img class="img-fluid p-2"
+                            src="../img/Facebook.png" alt="Link a Facebook"></a>
+                    <a target="_blank" href="https://www.instagram.com/"><img class="img-fluid p-2"
+                            src="../img/instagram.png" alt="Link a Instagram"></a>
+                </li>
+            </ul>
+            <div>
+                <span class="copy-text text-center">© 2023 VDV</span>
+            </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+</header>
