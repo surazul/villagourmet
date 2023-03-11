@@ -1,0 +1,42 @@
+/*body*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*imagen de fondo inicio*/
+
+.fondo {
+    height: 100vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+    background-color: black;
+}
+
+.fondo ::before {
+    background: url(../img/lima.jpg);
+    background-size: cover;
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+}
+
+.fondo p {
+    color: white;
+    isolation: isolate;
+    line-height: 2;
+}
+
+/*Carousel*/
+
+.imgCarousel {
+    width: 60%;
+    height: 60%;
+}
+
+p {
+    color: $parrafo;
+}

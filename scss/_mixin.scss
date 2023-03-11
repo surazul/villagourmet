@@ -1,0 +1,37 @@
+/*mixin con parametros*/
+
+@mixin limixin($size, $alineacion, $texto) {
+    font-size: $size;
+    text-align: $alineacion;
+    text-transform: $texto;
+
+}
+
+.liestilo {
+    @include limixin(12px, center, uppercase);
+}
+
+
+@mixin redesmixin($w, $h) {
+    width: $w ;
+    height: $h;
+}
+
+
+.redesestilo{
+    @include redesmixin(60px, 60px);
+}
+
+
+
+/*mixin sin parametros*/
+
+@mixin bodymixin {
+    background-color: black;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.bodyestilo{
+    @include bodymixin;
+    
+}

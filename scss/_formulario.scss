@@ -1,0 +1,27 @@
+/*botón del formulario de contacto*/
+
+.boton {
+    width: 90%;
+    height: 45px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: none;
+    color: rgb(188, 189, 188);
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.boton:hover {
+    cursor: pointer;
+    transform: translateY(-4px);
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+}
+
+.boton:active {
+    transform: translateY(3px);
+}
+
+.contenedorform {
+    width: 100%;
+    margin-left: 5%;
+}

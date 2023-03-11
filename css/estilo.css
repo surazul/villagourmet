@@ -1,57 +1,134 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Poppins:wght@200&display=swap');
-
-
-body {
-    font-family: 'Oxygen', sans-serif;
-
-}
-
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&family=Poppins:wght@200&display=swap"); /* Header*/
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: rgb(82, 70, 70) 10px double;
-    height: 200px;
-    font-weight: 600;
-    background-color: black;
-    grid-area: header;
-    position: sticky;
-    top: 0;
-    z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.logo {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.boton1:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.boton1:active {
+  transform: translateY(3px);
+}
 
 /*link whatsapp*/
 .botonWhatsApp img {
-    width: 70px;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
+  width: 70px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
 }
 
+/*body*/
+* {
+  margin: 0;
+  padding: 0;
+}
 
 /*imagen de fondo inicio*/
-
 .fondo {
-    height: 100vh;
-    position: relative;
-    display: grid;
-    place-items: center;
-    background-color: black;
+  height: 100vh;
+  position: relative;
+  display: grid;
+  place-items: center;
+  background-color: black;
 }
 
 .fondo ::before {
-    background: url(../img/lima.jpg);
-    background-size: cover;
-    content: "";
-    position: absolute;
-    inset: 0;
-    opacity: 0.1;
+  background: url(../img/lima.jpg);
+  background-size: cover;
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.1;
 }
 
 .fondo p {
-    color: white;
-    isolation: isolate;
-    line-height: 2;
+  color: white;
+  isolation: isolate;
+  line-height: 2;
 }
+
+/*Carousel*/
+.imgCarousel {
+  width: 60%;
+  height: 60%;
+}
+
+p {
+  color: white;
+}
+
+/*botón del formulario de contacto*/
+.boton {
+  width: 90%;
+  height: 45px;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: none;
+  color: rgb(188, 189, 188);
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.boton:hover {
+  cursor: pointer;
+  transform: translateY(-4px);
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.boton:active {
+  transform: translateY(3px);
+}
+
+.contenedorform {
+  width: 100%;
+  margin-left: 5%;
+}
+
+/*mixin con parametros*/
+.liestilo {
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.redesestilo {
+  width: 60px;
+  height: 60px;
+}
+
+/*mixin sin parametros*/
+.bodyestilo {
+  background-color: black;
+  font-family: "Oxygen", sans-serif;
+}
+
+/*# sourceMappingURL=estilo.css.map */

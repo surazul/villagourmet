@@ -1,0 +1,45 @@
+/* Header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+h1{
+    text-align: $alignh;
+}
+
+h2{
+    font-size: $sizeh;
+    font-weight: $fweighth;
+    text-align: $alignh;
+}
+
+
+.logo {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.boton1:hover{
+    cursor:pointer;
+    transform: translateY(-2px);
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+}
+
+.boton1:active{
+    transform:translateY(3px);
+}
+
+
+
+
+
