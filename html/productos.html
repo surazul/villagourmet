@@ -5,167 +5,216 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Villagourmet</title>
+    <meta name="description" content="Productos Gourmet: Lima, frutos secos, maracuya, hongos, etc.S">
+    <title>Villagourmet-productos</title>
     <!--hoja de CSS Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--hoja de Animate-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--hoja de AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--hoja de CSS -->
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
     <!--iconoweb-->
     <link rel="shortcut icon" href="../img/lima_3.png">
-
 </head>
 
-<body class="bg-black">
+<body class="bodyestilo">
 
     <!--Esto es el header -->
     <header>
         <!-- Div Fila completo de pantalla: Contiene imagen + navbar-->
-        <div class="container-lg align-items-center p-5">
-            <nav class="navbar static-top navbar-expand-lg" data-bs-theme="dark">
-                <!-- Le doy un volumen de 2/12 a la imagen -->
-                <div class="col-2 ms-1">
-                    <img class="img-fluid" src="../img/lima_2.jpeg" alt="logo" width="200" height="200">
-                </div>
-                <!-- Le doy un volumen de 10/12 al navbar -->
-                <div class="col-10 ms-5">
-
-                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Home</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="productos.html">Productos</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="ubicacion.html">Ubicación</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Buscar</button>
-                        </form>
+        <nav class="container-lg align-items-center">
+            <div class="container-fluid">
+                <div class="navbar static-top navbar-expand-lg navbar-dark" data-bs-theme="dark">
+                    <!-- Le doy un volumen de 2/12 a la imagen -->
+                    <div class="col-2 ms-5 me-5">
+                        <a class="nav-link" href="../index.html"><img class="logo img-fluid" src="../img/lima_2.jpeg"
+                                alt="logo"></a>
+                    </div>
+                    <!-- Le doy un volumen de 10/12 al navbar -->
+                    <div class="col-10 ms-5">
+                        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div class="liestilo">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="productos.html">Productos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contacto.html">Contacto</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ubicacion.html">Ubicación</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-5">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Buscar"
+                                        aria-label="Search">
+                                    <button class=" boton1 btn btn-outline-success" type="submit">Buscar</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </nav>
-        </div>
-
+            </div>
+        </nav>
     </header>
 
-    <div class="container-lg mt-3 text-white">
-        <div class="row-6 text-center">
-            <h1 class="text-success-emphasis">Productos</h1>
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                        aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                        aria-label="Slide 6"></button>
-                </div>
-                <div class="carousel-inner mt-5">
-                    <div class="carousel-item active">
-                        <img src="../img/mixfrutos.jpg" class="d-block w-100" alt="mixfrutos">
-                        <div class="carousel-caption d-none d-md-block">
-                            <p>Mix de Frutos</p>
+    <!--Seccion productos -->
+    <main>
+
+        <div class="contenedor container-lg mt-3 text-white">
+            <div class="row-6">
+                <h1 class="animate__animated animate__fadeInDown text-success mb-2 fw-bold">Villagourmet</h1>
+                <h2 class="text-success-emphasis" href="html/productos.html">Productos</h2>
+                <!--Seccion Lista productos -->
+                <section>
+                    <div class="row row-cols-1 row-cols-md-2 g-4 ">
+                        <div class="col p-5 text-start mt-5">
+                            <h3 class="fs-5 fw-bold pb-2">Lista de Productos</h3>
+                            <ul class="pt-3 m-2">
+                                <li>Mix de Frutos</li>
+                                <li>Lima</li>
+                                <li>Almendras</li>
+                                <li>Azafran</li>
+                                <li> Cúrcuma</li>
+                                <li>Hongos</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 p-5">
+                            <p
+                                class="animate__animated animate__shakeY text-center mt-5 mb-5 p-5 bg-info bg-opacity-10 border border-info border-start border-end">
+                                PEDIR LISTA DE PRECIOS POR WHATSAPP</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="../img/lima.jpg" class="d-block w-100" alt="lima">
-                        <div class="carousel-caption d-none d-md-block">
-                            <p>Lima</p>
+                </section>
+
+
+                <!--Seccion Grid productos -->
+                <section class="mt-5">
+                    <div class="row-4">
+                        <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+                            <div class="col">
+                                <div class="card bg-transparent" style="max-width: 25rem;">
+                                    <img src="../img/almendra.jpg" class="card-img-top" alt="foto de almendra">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Almendras</h5>
+                                        <p class="card-text ">PRODUCTO NACIONAL</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card bg-transparent " style="max-width: 25rem;">
+                                    <img src="../img/azafran.jpg" class="card-img-top" alt="foto de azafran">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Azafrán</h5>
+                                        <p class="card-text"> PRODUCTO NACIONAL</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card  bg-transparent" style="max-width: 25rem;">
+                                    <img src="../img/curcuma.jpg" class="card-img-top" alt="foto de curcuma">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cúrcuma</h5>
+                                        <p class="card-text"> PRODUCTO NACIONAL</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card bg-transparent" bg-transparent style="max-width: 25rem;">
+                                    <img src="../img/hongos.jpg" class="card-img-top" alt="foto de hongos">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hongos</h5>
+                                        <p class="card-text"> PRODUCTO NACIONAL</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card bg-transparent" style="max-width: 25rem;">
+                                    <img src="../img/mixfrutos.jpg" class="card-img-top" alt="foto de frutos">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mix de Frutos</h5>
+                                        <p class="card-text"> PRODUCTO NACIONAL</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card  bg-transparent" style="max-width: 25rem;">
+                                    <img src="../img/lima_1.jpeg" class="card-img-top" alt="foto de lima">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lima</h5>
+                                        <p class="card-text"> PRODUCTO IMPORTADO DE BRASIL</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/almendra.jpg" class="d-block w-100" alt="almendras">
-                        <div class="carousel-caption d-none d-md-block">
-                            <p>Almendras</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/azafran.jpg" class="d-block w-100" alt="azafran">
-                        <div class="carousel-caption d-none d-md-block">
-                            <p>Azafran</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/curcuma.jpg" class="d-block w-100" alt="Curcuma">
-                        <div class="carousel-caption d-none d-md-block">
-                            <p>Curcuma</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/hongos.jpg" class="d-block w-100" alt="Hongos">
-                        <div class="carousel-caption d-none d-md-block">
-                            <p>Hongos</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
+                </section>
+
             </div>
+        </div>
 
         </div>
-    </div>
-
-
-
+    </main>
 
 
 
 
 
     <!--Esto es el fotter -->
-    <footer class="container-lg mt-5 p-4 text-white text-center border-top ">
-        <h3>Seguinos en las Redes Sociales</h2>
-            <ul>
-                <div class="p-3 align-items-center">
-                    <a target="_blank" href="https://www.facebook.com/"><img class="img-fluid p-2"
-                            src="../img/Facebook.png" alt="Link a Facebook"></a>
-                    <a target="_blank" href="https://www.instagram.com/"><img class="img-fluid p-2"
-                            src="../img/instagram.png" alt="Link a Instagram"></a>
-                </div>
+    <footer class="container-lg mt-5 border-top ">
+        <div class="liestilo">
+            <ul class="nav justify-content-center p-1 mt-1">
+                <li class="nav-item"><a href="../index.html" class="nav-link text-white">Inicio</a></li>
+                <li class="nav-item"><a href="../html/productos.html" class="nav-link text-white">Productos</a>
+                </li>
+                <li class="nav-item"><a href="../html/contacto.html" class="nav-link text-white">Contacto</a></li>
+                <li class="nav-item"><a href="../html/ubicacion.html" class="nav-link text-white">Ubicación</a>
+                </li>
+                <li class="nav-item"><a href="../html/preguntasfrecuentes.html" class="nav-link text-white">Preguntas
+                        Frecuentes</a></li>
             </ul>
-            <div>
-                <span class="copy-text text-center">© 2023 VDV</span>
-            </div>
+        </div>
+        <div class="text-center">
+            <ul>
+                <h3 class="mt-3 text-white ">Seguinos en las Redes Sociales</h3>
+                <a target="_blank" href="https://www.facebook.com/"><img class="img-fluid predesestilo-2 boton1 "
+                        src="../img/Facebook.png" alt="Link a Facebook"></a>
+                <a target="_blank" href="https://www.instagram.com/"><img class="img-fluid redesestilo p-2 boton1"
+                        src="../img/instagram.png" alt="Link a Instagram"></a>
+                <a target="_blank" href="https://www.youtube.com/"><img class="img-fluid redesestilo p-2 boton1 "
+                        src="../img/youtube.png" alt="Link a Youtube"></a>
+                <p class="copy-text text-center text-white">© 2023 VDV</p>
+            </ul>
+        </div>
     </footer>
 
+    <!--Scrip Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <!--Script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

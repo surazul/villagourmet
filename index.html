@@ -5,144 +5,192 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Somos lideres en distribución mayorista de productos Gourmet. Envíos Gratis en el día.">
     <title>Villagourmet</title>
     <!--hoja de CSS Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--hoja de Animate-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--hoja de AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--hoja de CSS -->
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
     <!--iconoweb-->
     <link rel="shortcut icon" href="img/lima_3.png">
-
 </head>
 
-<body class="bg-black">
-
+<body class="bodyestilo">
     <!--Esto es el header -->
     <header>
         <!-- Div Fila completo de pantalla: Contiene imagen + navbar-->
-        <div class="container-lg align-items-center p-5">
-            <nav class="navbar static-top navbar-expand-lg" data-bs-theme="dark">
-                <!-- Le doy un volumen de 2/12 a la imagen -->
-                <div class="col-2 ms-1">
-                    <img class="img-fluid" src="img/lima_2.jpeg" alt="logo" width="200" height="200">
-                </div>
-                <!-- Le doy un volumen de 10/12 al navbar -->
-                <div class="col-10 ms-5">
-
-                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="html/productos.html">Productos</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="html/contacto.html">Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="html/ubicacion.html">Ubicación</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="html/preguntasfrecuentes.html">Preguntas Frecuentes</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Buscar</button>
-                        </form>
+        <nav class="container-lg align-items-center">
+            <div class="container-fluid">
+                <div class="navbar static-top navbar-expand-lg navbar-dark" data-bs-theme="dark">
+                    <!-- Le doy un volumen de 2/12 a la imagen -->
+                    <div class="col-2 ms-5 me-5">
+                        <a class="nav-link" href="index.html"><img class="logo img-fluid" src="img/lima_2.jpeg"
+                                alt="logo"></a>
+                    </div>
+                    <!-- Le doy un volumen de 10/12 al navbar -->
+                    <div class="col-10 ms-5">
+                        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div class="liestilo">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/html/productos.html">Productos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/html/contacto.html">Contacto</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/html/ubicacion.html">Ubicación</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/html/preguntasfrecuentes.html">Preguntas
+                                            Frecuentes</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-5">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Buscar"
+                                        aria-label="Search">
+                                    <button class=" boton1 btn btn-outline-success" type="submit">Buscar</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </nav>
-        </div>
-
+            </div>
+        </nav>
     </header>
 
+    <!-- Sección Inicio -->
+    <main>
+        <nav class="pb-5">
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <div class="container-lg mt-4 text-white fondo ">
+                    <div class="row">
+                        <h1 class="text-success mb-2 fw-bold">Villagourmet</h1>
+                        <h2 class="mb-5">Productos Gourmet</h2>
+                    </div>
+                    <p class="row mt-2 text-center fw-bold">Somos una empresa familiar con mas de 20 años en el rubro,
+                        dedicada
+                        a la importación y distrución de productos Gourmet.
+                    </p>
+                </div>
+            </div>
 
-    <div class="container-lg mt-4 text-white fondo ">
-        <div class="row text-center">
-            <h1 class="text-success mb-2 fw-bold">Villagourmet </h1>
-            <h2 class="mb-5">Productos Gourmet</h2>
-        </div>
-        <div class="row mt-2 text-center fw-bold ">
-            <p>Lorem ipsum dolor sit amet consectetur adpisicing elit. Vel quo ipsa ea debitis quas in rerum
-                at totam odit numquam tempore dolore accusantium beatae cupiditate pariatur, quos, vero fugiat dolores.
-                Aut obcaecati ullam hic est, maxime illum, illo commodi quo harum recusandae itaque expedita? Minima
-                aliquam
-                fugiat illum blanditiis. Porro pariatur vero dolor deleniti iusto, maxime animi harum esse repellendus.
-                Ratione dolore magni a deserunt maxime accusamus aliquam assumenda qui tempora soluta, libero enim
-                deleniti
-                commodi ad harum veniam ipsum reprehenderit asperiores quos fugiat. Optio, quia? Magni alias asperiores
-                quod?
-                Quibusdam voluptatem nemo, sapiente iste consequuntur libero minus, soluta suscipit id dolor earum
-                molestias
-                aut laboriosam repudiandae exercitationem delectus, dignissimos deserunt beatae autem voluptatum
-                asperiores
-                officia. Harum deleniti explicabo error?
-                Nobis ea atque est aperiam ratione impedit voluptate expedita amet consequatur magni harum voluptatibus
-                accusamus animi rem cum eum numquam quod, deserunt pariatur ut sed veritatis quam alias porro?
-                Voluptatem?
-                Beatae numquam ab excepturi ratione, dolores consectetur nisi? Dolorum corporis vel quaerat minima, hic
-                aspernatur dolore, animi sint iure voluptatum quisquam maiores natus sapiente sunt voluptas fuga
-                incidunt
-                repellendus officia!
-                Cupiditate perspiciatis maiores reiciendis illo, tempora numquam minima totam aliquid laudantium eius
-                veniam
-                temporibus consequuntur facere quis. Cumque voluptates culpa, quia sapiente, laborum temporibus in
-                labore
-                vel minus magnam tempore?
-                Iste nam omnis rerum quisquam officia cupiditate impedit in ipsa fugit amet ad temporibus pariatur sit
-                tempora corrupti veritatis sint, illo repudiandae numquam? Maxime cumque similique soluta, repudiandae
-                sit
-                eos.
-                Eaque illo inventore dolore, earum illum nesciunt libero! Laboriosam, quod eligendi, blanditiis hic
-                ipsum at
-                exercitationem ab provident accusantium, numquam non! Harum culpa est tenetur vero quas alias
-                consectetur
-                temporibus?
-                Ut voluptates placeat quo incidunt dolorum earum sit quod, quibusdam ab. Commodi corporis dicta eos
-                natus
-                vel voluptates repellat obcaecati asperiores! Dolore nihil magni quia aperiam voluptas tempore ut maiore
-            </p>
+            <div class="botonWhatsApp">
+                <a href="https://wa.me/5491163328735?text=Hola%necesito%20información" target="_blank"><img
+                        src="img/logoWhatsapp.png" alt="Link a WhatsApp"></a>
+            </div>
+        </nav>
 
-        </div>
-    </div>
-
-    <div class="botonWhatsApp">
-        <a href="https://wa.me/5491163328735?text=Hola%necesito%20información" target="_blank"><img
-                src="img/logoWhatsapp.png" alt="Link a WhatsApp"></a>
-    </div>
+        <nav class="pt-5 pb-5">
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade ">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slid e 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                </div>
+                <div>
+                    <div class="row-6 text-center">
+                        <div class="carousel-inner mt-5">
+                            <div class="carousel-item active">
+                                <img src="../img/mixfrutos.jpg" class="imgCarousel " alt="mixfrutos">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/lima_1.jpeg" class="imgCarousel " alt="lima">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/almendra.jpg" class="imgCarousel " alt="almendras">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/azafran.jpg" class="imgCarousel" alt="azafran">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/curcuma.jpg" class="imgCarousel" alt="Curcuma">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/hongos.jpg" class="imgCarousel" alt="Hongos">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </main>
 
     <!--Esto es el fotter -->
-    <footer class="container-lg mt-5 p-4 text-white text-center border-top ">
-        <h3>Seguinos en las Redes Sociales</h2>
-            <ul>
-                <div class="p-2 align-items-center">
-                    <a target="_blank" href="https://www.facebook.com/"><img class="img-fluid p-2 "
-                            src="img/Facebook.png" alt="Link a Facebook"></a>
-                    <a target="_blank" href="https://www.instagram.com/"><img class="img-fluid p-2"
-                            src="img/instagram.png" alt="Link a Instagram"></a>
-                </div>
+
+
+    <footer class="container-lg mt-5 border-top ">
+        <div class="liestilo">
+            <ul class="nav justify-content-center p-1 mt-1">
+                <li class="nav-item"><a href="index.html" class="nav-link text-white">Inicio</a></li>
+                <li class="nav-item"><a href="/html/productos.html" class="nav-link text-white">Productos</a></li>
+                <li class="nav-item"><a href="/html/contacto.html" class="nav-link text-white">Contacto</a></li>
+                <li class="nav-item"><a href="/html/ubicacion.html" class="nav-link text-white">Ubicación</a></li>
+                <li class="nav-item"><a href="/html/preguntasfrecuentes.html" class="nav-link text-white">Preguntas
+                        Frecuentes</a></li>
             </ul>
-            <div>
-                <span class="copy-text text-center ">© 2023 VDV</span>
-            </div>
+        </div>
+        <div class="text-center">
+            <ul>
+                <h3 class="mt-3 text-white ">Seguinos en las Redes Sociales</h3>
+                <a target="_blank" href="https://www.facebook.com/"><img class="img-fluid redesestilo p-2 boton1"
+                        src="img/Facebook.png" alt="Link a Facebook"></a>
+                <a target="_blank" href="https://www.instagram.com/"><img class="img-fluid redesestilo p-2 boton1 "
+                        src="img/instagram.png" alt="Link a Instagram"></a>
+                <a target="_blank" href="https://www.youtube.com/"><img class="img-fluid redesestilo p-2 boton1 "
+                        src="img/youtube.png" alt="Link a Youtube"></a>
+                <p class="copy-text text-center text-white">© 2023 VDV</p>
+            </ul>
+        </div>
     </footer>
 
+    <!--Scrip Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <!--Script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
