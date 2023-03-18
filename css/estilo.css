@@ -99,9 +99,21 @@ p {
   color: white;
 }
 
+/* Scroll Personalizado */
+body::-webkit-scrollbar {
+  width: 10px;
+  background: #000000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border-right: 3px solid #107220;
+}
+
 /*botón del formulario de contacto*/
 .boton {
-  width: 90%;
+  width: 30%;
   height: 45px;
   margin-top: 15px;
   border-radius: 8px;
@@ -121,25 +133,25 @@ p {
   transform: translateY(3px);
 }
 
-.contenedorform {
-  width: 100%;
-  margin-left: 5%;
+.contenedorForm {
+  width: 80%;
+  margin-left: 15%;
 }
 
 /*mixin con parametros*/
-.liestilo {
+.liEstilo {
   font-size: 12px;
   text-align: center;
   text-transform: uppercase;
 }
 
-.redesestilo {
+.redesEstilo {
   width: 60px;
   height: 60px;
 }
 
 /*mixin sin parametros*/
-.bodyestilo {
+.bodyEstilo {
   background-color: black;
   font-family: "Oxygen", sans-serif;
 }

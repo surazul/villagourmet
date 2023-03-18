@@ -13,11 +13,11 @@ header {
     z-index: 2;
 }
 
-h1{
+h1 {
     text-align: $alignh;
 }
 
-h2{
+h2 {
     font-size: $sizeh;
     font-weight: $fweighth;
     text-align: $alignh;
@@ -29,17 +29,12 @@ h2{
     cursor: pointer;
 }
 
-.boton1:hover{
-    cursor:pointer;
+.boton1:hover {
+    cursor: pointer;
     transform: translateY(-2px);
     transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
 }
 
-.boton1:active{
-    transform:translateY(3px);
+.boton1:active {
+    transform: translateY(3px);
 }
-
-
-
-
-
